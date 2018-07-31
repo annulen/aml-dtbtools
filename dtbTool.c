@@ -372,7 +372,7 @@ int main(int argc, char **argv)
     /* Open the .dtb files in the specified path, decompile and
        extract "amlogic-dt-id" parameter
      */
-            printf("hello world\n");
+            printf("hello world input_dir=%s\n", input_dir);
     while ((dp = readdir(dir)) != NULL) {
         if ((dp->d_type == DT_REG)) {
             printf("name = %s\n", dp->d_name);
