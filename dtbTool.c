@@ -374,7 +374,7 @@ int main(int argc, char **argv)
      */
             printf("hello world input_dir=%s\n", input_dir);
     while ((dp = readdir(dir)) != NULL) {
-            printf("1 name = %s\n", dp->d_name);
+            printf("1 name = %s type = %d\n", dp->d_name, dp->d_type);
         if ((dp->d_type == DT_REG)) {
             printf("2 name = %s\n", dp->d_name);
             flen = strlen(dp->d_name);
